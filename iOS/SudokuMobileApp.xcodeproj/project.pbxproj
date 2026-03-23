@@ -1,0 +1,358 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 60;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		100000000000000000000201 /* SudokuMobileApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000101 /* SudokuMobileApp.swift */; };
+		100000000000000000000202 /* SudokuMobileBoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000102 /* SudokuMobileBoardView.swift */; };
+		100000000000000000000203 /* SudokuMobileContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000103 /* SudokuMobileContentView.swift */; };
+		100000000000000000000204 /* SudokuMobileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000104 /* SudokuMobileViewModel.swift */; };
+		100000000000000000000205 /* PNGFileDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000105 /* PNGFileDocument.swift */; };
+		100000000000000000000206 /* PlatformSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000106 /* PlatformSupport.swift */; };
+		100000000000000000000207 /* SudokuGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000107 /* SudokuGrid.swift */; };
+		100000000000000000000208 /* SudokuImageRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000108 /* SudokuImageRecognizer.swift */; };
+		100000000000000000000209 /* SudokuImageRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000109 /* SudokuImageRenderer.swift */; };
+		10000000000000000000020A /* SudokuSolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10000000000000000000010A /* SudokuSolver.swift */; };
+		10000000000000000000020B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10000000000000000000010C /* Assets.xcassets */; };
+		10000000000000000000020C /* ../debug-board.png in Resources */ = {isa = PBXBuildFile; fileRef = 10000000000000000000010D /* ../debug-board.png */; };
+		10000000000000000000020D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10000000000000000000010E /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		100000000000000000000008 /* SudokuMobileApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SudokuMobileApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		100000000000000000000101 /* SudokuMobileApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SudokuMobileApp.swift; sourceTree = "<group>"; };
+		100000000000000000000102 /* SudokuMobileBoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SudokuMobileBoardView.swift; sourceTree = "<group>"; };
+		100000000000000000000103 /* SudokuMobileContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SudokuMobileContentView.swift; sourceTree = "<group>"; };
+		100000000000000000000104 /* SudokuMobileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SudokuMobileViewModel.swift; sourceTree = "<group>"; };
+		100000000000000000000105 /* PNGFileDocument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PNGFileDocument.swift; sourceTree = "<group>"; };
+		100000000000000000000106 /* PlatformSupport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlatformSupport.swift; sourceTree = "<group>"; };
+		100000000000000000000107 /* SudokuGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SudokuGrid.swift; sourceTree = "<group>"; };
+		100000000000000000000108 /* SudokuImageRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SudokuImageRecognizer.swift; sourceTree = "<group>"; };
+		100000000000000000000109 /* SudokuImageRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SudokuImageRenderer.swift; sourceTree = "<group>"; };
+		10000000000000000000010A /* SudokuSolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SudokuSolver.swift; sourceTree = "<group>"; };
+		10000000000000000000010B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		10000000000000000000010C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		10000000000000000000010D /* ../debug-board.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "../debug-board.png"; sourceTree = SOURCE_ROOT; };
+		10000000000000000000010E /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		10000000000000000000000A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		100000000000000000000002 = {
+			isa = PBXGroup;
+			children = (
+				100000000000000000000004 /* SudokuMobileApp */,
+				100000000000000000000005 /* SudokuCore */,
+				100000000000000000000006 /* Resources */,
+				100000000000000000000003 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		100000000000000000000003 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				100000000000000000000008 /* SudokuMobileApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		100000000000000000000004 /* SudokuMobileApp */ = {
+			isa = PBXGroup;
+			children = (
+				100000000000000000000101 /* SudokuMobileApp.swift */,
+				100000000000000000000102 /* SudokuMobileBoardView.swift */,
+				100000000000000000000103 /* SudokuMobileContentView.swift */,
+				100000000000000000000104 /* SudokuMobileViewModel.swift */,
+				100000000000000000000105 /* PNGFileDocument.swift */,
+			);
+			name = SudokuMobileApp;
+			path = ../Sources/SudokuMobileApp;
+			sourceTree = SOURCE_ROOT;
+		};
+		100000000000000000000005 /* SudokuCore */ = {
+			isa = PBXGroup;
+			children = (
+				100000000000000000000106 /* PlatformSupport.swift */,
+				100000000000000000000107 /* SudokuGrid.swift */,
+				100000000000000000000108 /* SudokuImageRecognizer.swift */,
+				100000000000000000000109 /* SudokuImageRenderer.swift */,
+				10000000000000000000010A /* SudokuSolver.swift */,
+			);
+			name = SudokuCore;
+			path = ../Sources/SudokuCore;
+			sourceTree = SOURCE_ROOT;
+		};
+		100000000000000000000006 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				10000000000000000000010B /* Info.plist */,
+				10000000000000000000010C /* Assets.xcassets */,
+				10000000000000000000010E /* LaunchScreen.storyboard */,
+				10000000000000000000010D /* ../debug-board.png */,
+			);
+			name = Resources;
+			path = SudokuMobileApp;
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		100000000000000000000007 /* SudokuMobileApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 10000000000000000000000D /* Build configuration list for PBXNativeTarget "SudokuMobileApp" */;
+			buildPhases = (
+				100000000000000000000009 /* Sources */,
+				10000000000000000000000A /* Frameworks */,
+				10000000000000000000000B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SudokuMobileApp;
+			productName = SudokuMobileApp;
+			productReference = 100000000000000000000008 /* SudokuMobileApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		100000000000000000000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 2630;
+				TargetAttributes = {
+					100000000000000000000007 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+				};
+			};
+			buildConfigurationList = 10000000000000000000000C /* Build configuration list for PBXProject "SudokuMobileApp" */;
+			compatibilityVersion = "Xcode 15.0";
+			developmentRegion = zh_CN;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				zh_CN,
+				en,
+			);
+			mainGroup = 100000000000000000000002;
+			productRefGroup = 100000000000000000000003 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				100000000000000000000007 /* SudokuMobileApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		10000000000000000000000B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10000000000000000000020B /* Assets.xcassets in Resources */,
+				10000000000000000000020D /* LaunchScreen.storyboard in Resources */,
+				10000000000000000000020C /* ../debug-board.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		100000000000000000000009 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				100000000000000000000201 /* SudokuMobileApp.swift in Sources */,
+				100000000000000000000202 /* SudokuMobileBoardView.swift in Sources */,
+				100000000000000000000203 /* SudokuMobileContentView.swift in Sources */,
+				100000000000000000000204 /* SudokuMobileViewModel.swift in Sources */,
+				100000000000000000000205 /* PNGFileDocument.swift in Sources */,
+				100000000000000000000206 /* PlatformSupport.swift in Sources */,
+				100000000000000000000207 /* SudokuGrid.swift in Sources */,
+				100000000000000000000208 /* SudokuImageRecognizer.swift in Sources */,
+				100000000000000000000209 /* SudokuImageRenderer.swift in Sources */,
+				10000000000000000000020A /* SudokuSolver.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		10000000000000000000000E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				DEVELOPMENT_TEAM = WMQVLUMWU6;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		10000000000000000000000F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				DEVELOPMENT_TEAM = WMQVLUMWU6;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		100000000000000000000010 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = SudokuMobileApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.guokai.sudokumobileapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		100000000000000000000011 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = SudokuMobileApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.guokai.sudokumobileapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		10000000000000000000000C /* Build configuration list for PBXProject "SudokuMobileApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				10000000000000000000000E /* Debug */,
+				10000000000000000000000F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		10000000000000000000000D /* Build configuration list for PBXNativeTarget "SudokuMobileApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				100000000000000000000010 /* Debug */,
+				100000000000000000000011 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 100000000000000000000001 /* Project object */;
+}
