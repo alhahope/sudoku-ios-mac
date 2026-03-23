@@ -12,6 +12,8 @@
 # Xcode build products
 iOS/build/
 iOS/obj/
+*.xcuserstate
+xcuserdata/
 
 # Compiled app bundles and binaries
 *.app
