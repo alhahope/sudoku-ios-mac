@@ -10,6 +10,16 @@
 - 仅在唯一解存在时输出答案
 - 把答案叠加回原截图并导出 PNG
 
+## 截图预览
+
+### 题面识别示例
+
+![原始棋盘截图](docs/screenshots/board-input.png)
+
+### 答案叠加示例
+
+![答案叠加截图](docs/screenshots/board-solved.png)
+
 ## 项目结构
 
 ```text
@@ -21,6 +31,8 @@
 │   └── SudokuImageSolver/   # 命令行入口
 ├── iOS/
 │   └── SudokuMobileApp.xcodeproj
+├── docs/screenshots/        # README 截图
+├── .github/workflows/       # GitHub Actions 发布流程
 ├── build_app.sh             # 构建 macOS App
 ├── build_ios_sim.sh         # 构建 iOS 模拟器 App
 └── Package.swift
@@ -121,6 +133,30 @@ swift build -c release
 
 这一版已经可以用于实际使用，但 OCR 仍然属于辅助功能，建议在求解前人工检查一遍识别结果。
 
+## GitHub Release 发布
+
+仓库已经附带自动发布工作流：
+
+- 文件位置：`.github/workflows/release.yml`
+- 触发方式：推送 `v*` 标签
+- 发布内容：
+  - `SudokuDesktopApp-macos.zip`
+  - `SudokuMobileApp-ios-simulator.zip`
+  - `sudoku-image-solver-macos.zip`
+  - `SHA256SUMS.txt`
+
+发布一个新版本时可以这样做：
+
+```bash
+git tag v1.0.0
+git push origin v1.0.0
+```
+
+注意：
+
+- iOS 产物是未签名的模拟器版本，适合演示和开发验证
+- 真机安装仍需要你在本地 Xcode 中使用自己的签名配置
+
 ## 核心文件
 
 - `Sources/SudokuCore/SudokuSolver.swift`
@@ -130,6 +166,15 @@ swift build -c release
 - `Sources/SudokuMobileApp/SudokuMobileContentView.swift`
 - `iOS/SudokuMobileApp.xcodeproj`
 
+## 许可证
+
+本项目使用 [Apache License 2.0](LICENSE)。
+
+如果你分发修改版，请同时保留：
+
+- `LICENSE`
+- `NOTICE`
+
 ## GitHub 发布建议
 
 仓库中建议提交：
@@ -137,6 +182,8 @@ swift build -c release
 - 源代码
 - `Package.swift`
 - `README.md`
+- `LICENSE`
+- `NOTICE`
 - `build_app.sh`
 - `build_ios_sim.sh`
 - iOS 工程文件和资源
